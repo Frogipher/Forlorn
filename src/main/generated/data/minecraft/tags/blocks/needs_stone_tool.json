@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "forlorn:umbrite_block",
+    "forlorn:raw_umbrite_block",
+    "forlorn:umbrite_ore",
+    "forlorn:brass_block",
+    "forlorn:raw_brass_block",
+    "forlorn:brass_ore",
+    "forlorn:veridium_block",
+    "forlorn:raw_veridium_block",
+    "forlorn:veridium_ore",
+    "forlorn:shale",
+    "forlorn:polished_shale",
+    "forlorn:shale_bricks",
+    "forlorn:cracked_shale_bricks",
+    "forlorn:chiseled_shale_bricks",
+    "forlorn:shale_brick_slab",
+    "forlorn:shale_brick_stairs",
+    "forlorn:polished_shale_slab",
+    "forlorn:polished_shale_stairs",
+    "forlorn:bubble_bulb_block",
+    "forlorn:pink_bubble_lamp",
+    "forlorn:blue_bubble_lamp",
+    "forlorn:purple_bubble_lamp"
+  ]
+}

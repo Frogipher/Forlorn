@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "forlorn:block/stripped_verdant_log",
+    "side": "forlorn:block/stripped_verdant_log"
+  }
+}

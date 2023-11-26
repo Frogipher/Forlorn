@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "forlorn:block/polished_shale",
+    "side": "forlorn:block/polished_shale",
+    "top": "forlorn:block/polished_shale"
+  }
+}

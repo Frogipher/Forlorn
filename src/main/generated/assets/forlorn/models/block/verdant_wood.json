@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "forlorn:block/verdant_log",
+    "side": "forlorn:block/verdant_log"
+  }
+}

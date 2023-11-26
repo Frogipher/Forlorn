@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "forlorn:block/shale_brick_slab"
+    },
+    "type=double": {
+      "model": "forlorn:block/shale_bricks"
+    },
+    "type=top": {
+      "model": "forlorn:block/shale_brick_slab_top"
+    }
+  }
+}

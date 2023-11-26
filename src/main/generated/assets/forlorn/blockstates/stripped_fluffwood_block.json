@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "forlorn:block/stripped_fluffwood_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "forlorn:block/stripped_fluffwood_block"
+    },
+    "axis=z": {
+      "model": "forlorn:block/stripped_fluffwood_block",
+      "x": 90
+    }
+  }
+}

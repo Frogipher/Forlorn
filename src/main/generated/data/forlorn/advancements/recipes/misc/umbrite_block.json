@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:umbrite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbrite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forlorn:umbrite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_umbrite_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:umbrite_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

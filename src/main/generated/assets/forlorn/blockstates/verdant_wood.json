@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "forlorn:block/verdant_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "forlorn:block/verdant_wood"
+    },
+    "axis=z": {
+      "model": "forlorn:block/verdant_wood",
+      "x": 90
+    }
+  }
+}

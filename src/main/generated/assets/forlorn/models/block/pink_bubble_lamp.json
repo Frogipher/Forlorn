@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "forlorn:block/pink_bubble_lamp"
+  }
+}

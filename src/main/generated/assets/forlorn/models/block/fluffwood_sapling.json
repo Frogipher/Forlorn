@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "forlorn:block/fluffwood_sapling"
+  }
+}

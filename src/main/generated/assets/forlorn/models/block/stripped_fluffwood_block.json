@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "forlorn:block/fluffwood_block_top",
+    "side": "forlorn:block/stripped_fluffwood_block"
+  }
+}

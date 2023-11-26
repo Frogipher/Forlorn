@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "forlorn:block/bubble_bulb_block"
+    },
+    "clicked=true": {
+      "model": "forlorn:block/bubble_bulb_block_on"
+    }
+  }
+}

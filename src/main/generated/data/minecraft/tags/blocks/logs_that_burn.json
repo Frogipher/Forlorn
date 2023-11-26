@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "forlorn:verdant_log",
+    "forlorn:stripped_verdant_log",
+    "forlorn:verdant_wood",
+    "forlorn:stripped_verdant_wood",
+    "forlorn:fluffwood_block",
+    "forlorn:stripped_fluffwood_block"
+  ]
+}
