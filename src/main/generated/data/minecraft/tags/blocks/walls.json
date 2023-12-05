@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "forlorn:polished_shale_wall"
+    "forlorn:polished_shale_wall",
+    "forlorn:shale_brick_wall",
+    "forlorn:shale_brick_wall"
   ]
 }

@@ -66,19 +66,31 @@ public class ModBlocks {
     //Stairs
     public static final Block POLISHED_SHALE_STAIRS = registerBlock("polished_shale_stairs", new StairsBlock(ModBlocks.POLISHED_SHALE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block SHALE_BRICK_STAIRS = registerBlock("shale_brick_stairs", new StairsBlock(ModBlocks.SHALE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block SHALE_STAIRS = registerBlock("shale_stairs", new StairsBlock(ModBlocks.SHALE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block VERDANT_STAIRS = registerBlock("verdant_stairs", new StairsBlock(ModBlocks.VERDANT_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.PALE_PURPLE)));
+    public static final Block FLUFFWOOD_STAIRS = registerBlock("fluffwood_stairs", new StairsBlock(ModBlocks.FLUFFWOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_WHITE)));
 
     //Slabs
     public static final Block SHALE_BRICK_SLAB = registerBlock("shale_brick_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block POLISHED_SHALE_SLAB = registerBlock("polished_shale_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block SHALE_SLAB = registerBlock("shale_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block VERDANT_SLAB = registerBlock("verdant_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.PALE_PURPLE)));
+    public static final Block FLUFFWOOD_SLAB = registerBlock("fluffwood_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_WHITE)));
 
     //Buttons
     public static final Block POLISHED_SHALE_BUTTON = registerBlock("polished_shale_button", new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON), BlockSetType.STONE, 20, true));
+    public static final Block VERDANT_BUTTON = registerBlock("verdant_button", new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 20, true));
+    public static final Block FLUFFWOOD_BUTTON = registerBlock("fluffwood_button", new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 20, true));
 
     //Walls
     public static final Block POLISHED_SHALE_WALL = registerBlock("polished_shale_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.ANDESITE_WALL).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block SHALE_BRICK_WALL = registerBlock("shale_brick_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.ANDESITE_WALL).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block SHALE_WALL = registerBlock("shale_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.ANDESITE_WALL).mapColor(MapColor.DEEPSLATE_GRAY)));
 
     //Pressure Plates
     public static final Block POLISHED_SHALE_PRESSURE_PLATE = registerBlock("polished_shale_pressure_plate", new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE), BlockSetType.STONE));
+    public static final Block VERDANT_PRESSURE_PLATE = registerBlock("verdant_pressure_plate", new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
+    public static final Block FLUFFWOOD_PRESSURE_PLATE = registerBlock("fluffwood_pressure_plate", new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
 
     //Crops
     public static final Block MINT_CROP = registerBlockWithoutBlockItem("mint_crop", new MintCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));

@@ -28,22 +28,40 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERIDIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_VERIDIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERIDIUM_ORE);
-        BlockStateModelGenerator.BlockTexturePool shale_bricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SHALE_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool polished_shaleTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SHALE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SHALE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_SHALE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRACKED_SHALE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_BUBBLE_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_BUBBLE_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_BUBBLE_LAMP);
+        BlockStateModelGenerator.BlockTexturePool shale_bricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SHALE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool polished_shaleTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SHALE);
+        BlockStateModelGenerator.BlockTexturePool shaleTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SHALE);
+        BlockStateModelGenerator.BlockTexturePool verdantTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VERDANT_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool fluffwoodTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLUFFWOOD_PLANKS);
 
         shale_bricksTexturePool.stairs(ModBlocks.SHALE_BRICK_STAIRS);
-        shale_bricksTexturePool.slab(ModBlocks.SHALE_BRICK_SLAB);
         polished_shaleTexturePool.stairs(ModBlocks.POLISHED_SHALE_STAIRS);
+        shaleTexturePool.stairs(ModBlocks.SHALE_STAIRS);
+        fluffwoodTexturePool.stairs(ModBlocks.FLUFFWOOD_STAIRS);
+        verdantTexturePool.stairs(ModBlocks.VERDANT_STAIRS);
+
+        shale_bricksTexturePool.slab(ModBlocks.SHALE_BRICK_SLAB);
         polished_shaleTexturePool.slab(ModBlocks.POLISHED_SHALE_SLAB);
+        shaleTexturePool.slab(ModBlocks.SHALE_SLAB);
+        verdantTexturePool.slab(ModBlocks.VERDANT_SLAB);
+        fluffwoodTexturePool.slab(ModBlocks.FLUFFWOOD_SLAB);
+
         polished_shaleTexturePool.button(ModBlocks.POLISHED_SHALE_BUTTON);
+        verdantTexturePool.button(ModBlocks.VERDANT_BUTTON);
+        fluffwoodTexturePool.button(ModBlocks.FLUFFWOOD_BUTTON);
+
         polished_shaleTexturePool.pressurePlate(ModBlocks.POLISHED_SHALE_PRESSURE_PLATE);
+        verdantTexturePool.pressurePlate(ModBlocks.VERDANT_PRESSURE_PLATE);
+        fluffwoodTexturePool.pressurePlate(ModBlocks.FLUFFWOOD_PRESSURE_PLATE);
+
         polished_shaleTexturePool.wall(ModBlocks.POLISHED_SHALE_WALL);
+        shale_bricksTexturePool.wall(ModBlocks.SHALE_BRICK_WALL);
+        shaleTexturePool.wall(ModBlocks.SHALE_WALL);
 
         registerCustomLamp(blockStateModelGenerator);
 
@@ -52,12 +70,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(ModBlocks.VERDANT_LOG).log(ModBlocks.VERDANT_LOG).wood(ModBlocks.VERDANT_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_VERDANT_LOG).log(ModBlocks.STRIPPED_VERDANT_LOG).wood(ModBlocks.STRIPPED_VERDANT_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANT_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANT_LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.VERDANT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerLog(ModBlocks.FLUFFWOOD_BLOCK).log(ModBlocks.FLUFFWOOD_BLOCK).wood(ModBlocks.STRIPPED_FLUFFWOOD_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FLUFFWOOD_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FLUFF);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.FLUFFWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }

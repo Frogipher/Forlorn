@@ -1,6 +1,6 @@
-// 1.20.1	2023-11-26T15:05:55.786155	forlorn/Tags for minecraft:block
-178cdd5dcec5f60c3d189ab8d7e269ffe813a411 data/minecraft/tags/blocks/needs_stone_tool.json
+// 1.20.1	2023-11-30T20:07:08.100721	forlorn/Tags for minecraft:block
+4d9481a57031625de83d560bfaab5f8257f1551a data/minecraft/tags/blocks/needs_stone_tool.json
 358b3fb69f0ac8fe32ed6e04451f9810b9ed537e data/minecraft/tags/blocks/logs_that_burn.json
-4ea68c6f7fe1ebc41926f8a4e9c7aeb8cf7cd86e data/minecraft/tags/blocks/mineable/axe.json
-a4bc4588f8ccd95bd551a0069524f7181394370c data/minecraft/tags/blocks/walls.json
+0b17e30bad45977168e09648476baabacef61eb1 data/minecraft/tags/blocks/mineable/axe.json
+de38d1ed93fad6c4f0a36532373488a5f2c93610 data/minecraft/tags/blocks/walls.json
 7fdadb69fb55d7d803b13431b5786d9c74fd6ed5 data/minecraft/tags/blocks/mineable/pickaxe.json

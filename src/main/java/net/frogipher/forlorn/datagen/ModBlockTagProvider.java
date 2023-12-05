@@ -55,7 +55,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.STRIPPED_VERDANT_LOG,
                         ModBlocks.FLUFFWOOD_BLOCK,
                         ModBlocks.FLUFFWOOD_PLANKS,
-                        ModBlocks.STRIPPED_FLUFFWOOD_BLOCK
+                        ModBlocks.STRIPPED_FLUFFWOOD_BLOCK,
+                        ModBlocks.FLUFFWOOD_PRESSURE_PLATE,
+                        ModBlocks.FLUFFWOOD_SLAB,
+                        ModBlocks.FLUFFWOOD_STAIRS,
+                        ModBlocks.VERDANT_SLAB,
+                        ModBlocks.VERDANT_STAIRS,
+                        ModBlocks.VERDANT_PRESSURE_PLATE,
+                        ModBlocks.VERDANT_BUTTON,
+                        ModBlocks.FLUFFWOOD_BUTTON
                         );
 
 
@@ -81,11 +89,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.BUBBLE_BULB_BLOCK,
                         ModBlocks.PINK_BUBBLE_LAMP,
                         ModBlocks.BLUE_BUBBLE_LAMP,
-                        ModBlocks.PURPLE_BUBBLE_LAMP
+                        ModBlocks.PURPLE_BUBBLE_LAMP,
+                        ModBlocks.SHALE_SLAB,
+                        ModBlocks.SHALE_STAIRS
                 );
 
         getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.POLISHED_SHALE_WALL
+                .add(ModBlocks.POLISHED_SHALE_WALL,
+                        ModBlocks.SHALE_BRICK_WALL,
+                        ModBlocks.SHALE_BRICK_WALL
                 );
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)

@@ -34,6 +34,9 @@ public class ModItemGroup {
                         entries.add(ModItems.VERIDIUM_INGOT);
 
                         entries.add(ModBlocks.SHALE);
+                        entries.add(ModBlocks.SHALE_STAIRS);
+                        entries.add(ModBlocks.SHALE_SLAB);
+                        entries.add(ModBlocks.SHALE_WALL);
                         entries.add(ModBlocks.POLISHED_SHALE);
                         entries.add(ModBlocks.POLISHED_SHALE_STAIRS);
                         entries.add(ModBlocks.POLISHED_SHALE_SLAB);
@@ -42,6 +45,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.SHALE_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_SHALE_BRICKS);
                         entries.add(ModBlocks.CHISELED_SHALE_BRICKS);
+                        entries.add(ModBlocks.SHALE_BRICK_WALL);
                         entries.add(ModBlocks.POLISHED_SHALE_WALL);
                         entries.add(ModBlocks.POLISHED_SHALE_BUTTON);
                         entries.add(ModBlocks.POLISHED_SHALE_PRESSURE_PLATE);
@@ -57,12 +61,20 @@ public class ModItemGroup {
                         entries.add(ModBlocks.STRIPPED_VERDANT_LOG);
                         entries.add(ModBlocks.STRIPPED_VERDANT_WOOD);
                         entries.add(ModBlocks.VERDANT_PLANKS);
+                        entries.add(ModBlocks.VERDANT_STAIRS);
+                        entries.add(ModBlocks.VERDANT_SLAB);
+                        entries.add(ModBlocks.VERDANT_PRESSURE_PLATE);
+                        entries.add(ModBlocks.VERDANT_BUTTON);
                         entries.add(ModBlocks.VERDANT_LEAVES);
                         entries.add(ModBlocks.VERDANT_SAPLING);
 
                         entries.add(ModBlocks.FLUFFWOOD_BLOCK);
                         entries.add(ModBlocks.STRIPPED_FLUFFWOOD_BLOCK);
                         entries.add(ModBlocks.FLUFFWOOD_PLANKS);
+                        entries.add(ModBlocks.FLUFFWOOD_STAIRS);
+                        entries.add(ModBlocks.FLUFFWOOD_SLAB);
+                        entries.add(ModBlocks.FLUFFWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.FLUFFWOOD_BUTTON);
                         entries.add(ModBlocks.FLUFF);
                         entries.add(ModBlocks.FLUFFWOOD_SAPLING);
                         entries.add(ModItems.FLUFF_TUFT);

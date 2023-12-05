@@ -8,6 +8,14 @@
     "forlorn:stripped_verdant_log",
     "forlorn:fluffwood_block",
     "forlorn:fluffwood_planks",
-    "forlorn:stripped_fluffwood_block"
+    "forlorn:stripped_fluffwood_block",
+    "forlorn:fluffwood_pressure_plate",
+    "forlorn:fluffwood_slab",
+    "forlorn:fluffwood_stairs",
+    "forlorn:verdant_slab",
+    "forlorn:verdant_stairs",
+    "forlorn:verdant_pressure_plate",
+    "forlorn:verdant_button",
+    "forlorn:fluffwood_button"
   ]
 }

@@ -54,9 +54,21 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FLUFFWOOD_SAPLING);
         addDrop(ModBlocks.ECHO_FLOWER);
         addDrop(ModBlocks.POTTED_ECHO_FLOWER);
+        addDrop(ModBlocks.SHALE_STAIRS);
+        addDrop(ModBlocks.SHALE_WALL);
+        addDrop(ModBlocks.SHALE_BRICK_WALL);
+        addDrop(ModBlocks.VERDANT_STAIRS);
+        addDrop(ModBlocks.FLUFFWOOD_STAIRS);
+        addDrop(ModBlocks.FLUFFWOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.FLUFFWOOD_BUTTON);
+        addDrop(ModBlocks.VERDANT_BUTTON);
+        addDrop(ModBlocks.VERDANT_PRESSURE_PLATE);
 
         addDrop(ModBlocks.SHALE_BRICK_SLAB, slabDrops(ModBlocks.SHALE_BRICK_SLAB));
         addDrop(ModBlocks.POLISHED_SHALE_SLAB, slabDrops(ModBlocks.POLISHED_SHALE_SLAB));
+        addDrop(ModBlocks.SHALE_SLAB, slabDrops(ModBlocks.SHALE_SLAB));
+        addDrop(ModBlocks.VERDANT_SLAB, slabDrops(ModBlocks.VERDANT_SLAB));
+        addDrop(ModBlocks.FLUFFWOOD_SLAB, slabDrops(ModBlocks.FLUFFWOOD_SLAB));
 
         addDrop(ModBlocks.UMBRITE_ORE, oreDrops(ModBlocks.UMBRITE_ORE, ModItems.RAW_UMBRITE));
         addDrop(ModBlocks.BRASS_ORE, oreDrops(ModBlocks.BRASS_ORE, ModItems.RAW_BRASS));
