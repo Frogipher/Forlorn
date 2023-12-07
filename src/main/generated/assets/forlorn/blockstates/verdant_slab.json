@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "forlorn:block/verdant_slab"
+    },
+    "type=double": {
+      "model": "forlorn:block/verdant_planks"
+    },
+    "type=top": {
+      "model": "forlorn:block/verdant_slab_top"
+    }
+  }
+}

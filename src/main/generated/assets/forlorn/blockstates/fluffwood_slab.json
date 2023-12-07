@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "forlorn:block/fluffwood_slab"
+    },
+    "type=double": {
+      "model": "forlorn:block/fluffwood_planks"
+    },
+    "type=top": {
+      "model": "forlorn:block/fluffwood_slab_top"
+    }
+  }
+}

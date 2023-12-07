@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "forlorn:block/fluffwood_planks",
+    "side": "forlorn:block/fluffwood_planks",
+    "top": "forlorn:block/fluffwood_planks"
+  }
+}

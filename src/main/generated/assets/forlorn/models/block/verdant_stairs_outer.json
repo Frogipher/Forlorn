@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "forlorn:block/verdant_planks",
+    "side": "forlorn:block/verdant_planks",
+    "top": "forlorn:block/verdant_planks"
+  }
+}
