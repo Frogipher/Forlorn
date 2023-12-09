@@ -3,19 +3,18 @@ package net.frogipher.forlorn.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.frogipher.forlorn.Forlorn;
-import net.frogipher.forlorn.block.custom.BubbleBulbBlock;
-import net.frogipher.forlorn.block.custom.MintCropBlock;
+import net.frogipher.forlorn.block.custom.*;
 import net.frogipher.forlorn.world.tree.FluffwoodSaplingGenerator;
 import net.frogipher.forlorn.world.tree.VerdantSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.DyeColor;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
@@ -57,7 +56,8 @@ public class ModBlocks {
     public static final Block BUBBLE_BULB_BLOCK = registerBlock("bubble_bulb_block", new BubbleBulbBlock(FabricBlockSettings.create().mapColor(MapColor.RAW_IRON_PINK).instrument(Instrument.XYLOPHONE).strength(4f).requiresTool().luminance(state -> state.get(BubbleBulbBlock.CLICKED) ? 15:0)));
 
     //Shale
-    public static final Block SHALE = registerBlock("shale", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block SHALE = registerBlock("shale", new ShaleBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block OVERGROWN_SHALE = registerBlock("overgrown_shale", new OvergrownShaleBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY).ticksRandomly()));
     public static final Block SHALE_BRICKS = registerBlock("shale_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block CRACKED_SHALE_BRICKS = registerBlock("cracked_shale_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block CHISELED_SHALE_BRICKS = registerBlock("chiseled_shale_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
@@ -98,6 +98,15 @@ public class ModBlocks {
     //Flowers
     public static final Block ECHO_FLOWER = registerBlock("echo_flower", new FlowerBlock(StatusEffects.DARKNESS, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM).luminance(5)));
     public static final Block POTTED_ECHO_FLOWER = registerBlockWithoutBlockItem("potted_echo_flower", new FlowerPotBlock(ECHO_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).luminance(5)));
+
+    //Functional Blocks
+    public static final Block WORKBENCH = registerBlock("workbench", new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)));
+    public static final Block POTBELLY_STOVE = registerBlock("potbelly_stove", new PotbellyStoveBlock(FabricBlockSettings.copyOf(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final Block SPINNING_WHEEL = registerBlock("spinning_wheel", new SpinningWheelBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_PLANKS)));
+    public static final Block ARCHITECT_TABLE = registerBlock("architect_table", new ArchitectTableBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.DEEPSLATE_GRAY)));
+    public static final BlockSoundGroup BUBBLE = new BlockSoundGroup(0.3F, 1.0F, SoundEvents.ENTITY_ITEM_PICKUP, SoundEvents.BLOCK_MOSS_STEP, SoundEvents.ENTITY_ITEM_PICKUP, SoundEvents.BLOCK_MOSS_HIT, SoundEvents.ENTITY_ITEM_PICKUP);
+    public static final Block BUBBLE_BLOCK = registerBlockWithoutBlockItem("bubble_block", new BubbleBlock(FabricBlockSettings.copyOf(Blocks.GLASS).nonOpaque().sounds(BUBBLE)));
+
 
 
     //Registries

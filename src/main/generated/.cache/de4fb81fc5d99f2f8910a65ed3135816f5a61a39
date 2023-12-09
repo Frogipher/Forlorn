@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-30T20:07:08.093652	forlorn/Tags for minecraft:item
-2b58f76f9b8f5967b6d1bba3081ab843280fb8d5 data/minecraft/tags/items/music_discs.json
-a2e45b7fd6970a84fe9e6d275099793277a05f5f data/minecraft/tags/items/planks.json
-ba8e1adfad8640a382c2a300c6f7953dfbd39763 data/minecraft/tags/items/logs_that_burn.json
+// 1.20.1	2023-12-09T22:29:21.1823588	forlorn/Tags for minecraft:item
+ba8e1adfad8640a382c2a300c6f7953dfbd39763 data\minecraft\tags\items\logs_that_burn.json
+a2e45b7fd6970a84fe9e6d275099793277a05f5f data\forlorn\tags\items\forlorn_planks.json
+2b58f76f9b8f5967b6d1bba3081ab843280fb8d5 data\minecraft\tags\items\music_discs.json

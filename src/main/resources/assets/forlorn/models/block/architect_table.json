@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "forlorn:block/polished_shale",
+    "east": "forlorn:block/architect_table_side",
+    "north": "forlorn:block/architect_table_front",
+    "particle": "forlorn:block/architect_table_front",
+    "south": "forlorn:block/architect_table_front",
+    "up": "forlorn:block/workstation_top",
+    "west": "forlorn:block/architect_table_side"
+  }
+}

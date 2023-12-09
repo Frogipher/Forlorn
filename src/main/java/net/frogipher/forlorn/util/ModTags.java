@@ -17,6 +17,8 @@ public class ModTags {
         private static TagKey<Block> createCommonBlockTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, new Identifier("c", name));
         }
+
+        public static final TagKey<Block> SHALE_GROWTH = createBlockTag("shale_growth");
     }
 
     public static class Items {
@@ -27,5 +29,7 @@ public class ModTags {
         private static TagKey<Item> createCommonItemTag(String name){
             return TagKey.of(RegistryKeys.ITEM, new Identifier("c", name));
         }
+
+        public static final TagKey<Item> FORLORN_PLANKS = createItemTag("forlorn_planks");
     }
 }

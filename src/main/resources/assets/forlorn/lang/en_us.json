@@ -28,12 +28,20 @@
   "item.forlorn.twig": "Twig",
   "item.forlorn.raw_glow_guppy": "Glow Guppy",
   "item.forlorn.empty_vessel": "Empty Vessel",
+  "item.forlorn.bubble_vessel": "Bubble Vessel",
 
 
   "block.forlorn.umbrite_block": "Block of Umbrite",
   "block.forlorn.raw_umbrite_block": "Block of Raw Umbrite",
   "block.forlorn.umbrite_ore": "Umbrite Ore",
+  "block.forlorn.brass_block": "Block of Brass",
+  "block.forlorn.raw_brass_block": "Block of Raw Brass",
+  "block.forlorn.brass_ore": "Brass Ore",
+  "block.forlorn.veridium_block": "Block of Veridium",
+  "block.forlorn.raw_veridium_block": "Block of Raw Veridium",
+  "block.forlorn.veridium_ore": "Veridium Ore",
   "block.forlorn.shale": "Shale",
+  "block.forlorn.overgrown_shale": "Overgrown Shale",
   "block.forlorn.polished_shale": "Polished Shale",
   "block.forlorn.shale_bricks": "Shale Bricks",
   "block.forlorn.cracked_shale_bricks": "Cracked Shale Bricks",
@@ -74,9 +82,14 @@
   "block.forlorn.fluffwood_slab": "Fluffwood Slab",
   "block.forlorn.verdant_stairs": "Verdant Stairs",
   "block.forlorn.verdant_slab": "Verdant Slab",
+  "block.forlorn.workbench": "Workbench",
+  "block.forlorn.potbelly_stove": "Potbelly Stove",
+  "block.forlorn.spinning_wheel": "Spinning Wheel",
+  "block.forlorn.architect_table": "Architect Table",
 
   "item.forlorn.farther_music_disc": "Farther Music Disc",
   "item.forlorn.farther_music_disc.desc": "Ozyk - farther",
 
-  "itemgroup.forlorn": "Forlorn - The Outskirts"
+  "itemgroup.forlorn": "Forlorn - The Outskirts",
+  "container.potbelly_stove": "Potbelly Stove"
 }

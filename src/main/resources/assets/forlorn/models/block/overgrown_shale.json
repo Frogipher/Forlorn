@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "east": "forlorn:block/overgrown_shale_side",
+    "north": "forlorn:block/overgrown_shale_side",
+    "particle": "forlorn:block/overgrown_shale_side",
+    "south": "forlorn:block/overgrown_shale_side",
+    "west": "forlorn:block/overgrown_shale_side",
+    "down": "forlorn:block/shale",
+    "up": "forlorn:block/overgrown_shale_top"
+  }
+}

@@ -2,9 +2,11 @@ package net.frogipher.forlorn;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.frogipher.forlorn.block.ModBlockEntities;
 import net.frogipher.forlorn.block.ModBlocks;
 import net.frogipher.forlorn.item.ModItemGroup;
 import net.frogipher.forlorn.item.ModItems;
+import net.frogipher.forlorn.particle.ModParticles;
 import net.frogipher.forlorn.sound.ModSounds;
 import net.frogipher.forlorn.util.ModRegistries;
 import net.frogipher.forlorn.world.gen.ModWorldGeneration;
@@ -21,7 +23,9 @@ public class Forlorn implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.register();
 		ModSounds.registerSounds();
+		ModParticles.registerParticles();
 
 		ModItemGroup.registerItemGroups();
 		ModWorldGeneration.generateModWorldGeneration();

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "forlorn:block/polished_shale",
+    "east": "forlorn:block/workbench_side",
+    "north": "forlorn:block/workbench_front",
+    "particle": "forlorn:block/workbench_front",
+    "south": "forlorn:block/workbench_side",
+    "up": "forlorn:block/workbench_top",
+    "west": "forlorn:block/workbench_front"
+  }
+}

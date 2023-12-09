@@ -42,6 +42,7 @@ public class ModItems {
     public static final Item RAW_GLOW_GUPPY = registerItem("raw_glow_guppy", new Item(new FabricItemSettings().food(ModFoodComponents.RAW_GLOW_GUPPY)));
     public static final Item MINT_SEEDS = registerItem("mint_seeds", new AliasedBlockItem(ModBlocks.MINT_CROP, new FabricItemSettings()));
     public static final Item FARTHER_MUSIC_DISC = registerItem("farther_music_disc", new MusicDiscItem(9, ModSounds.FARTHER, new FabricItemSettings().maxCount(1), 145));
+    public static final Item BUBBLE_VESSEL = registerItem("bubble_vessel", new BubbleVesselItem(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(Forlorn.MOD_ID, name),item);

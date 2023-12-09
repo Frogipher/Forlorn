@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,stage=0": {
+      "model": "forlorn:block/spinning_wheel_stage_0",
+      "y": 90
+    },
+    "facing=north,stage=0": {
+      "model": "forlorn:block/spinning_wheel_stage_0"
+    },
+    "facing=south,stage=0": {
+      "model": "forlorn:block/spinning_wheel_stage_0",
+      "y": 180
+    },
+    "facing=west,stage=0": {
+      "model": "forlorn:block/spinning_wheel_stage_0",
+      "y": 270
+    },
+    "facing=east,stage=1": {
+      "model": "forlorn:block/spinning_wheel_stage_1",
+      "y": 90
+    },
+    "facing=north,stage=1": {
+      "model": "forlorn:block/spinning_wheel_stage_1"
+    },
+    "facing=south,stage=1": {
+      "model": "forlorn:block/spinning_wheel_stage_1",
+      "y": 180
+    },
+    "facing=west,stage=1": {
+      "model": "forlorn:block/spinning_wheel_stage_1",
+      "y": 270
+    },
+    "facing=east,stage=2": {
+      "model": "forlorn:block/spinning_wheel_stage_2",
+      "y": 90
+    },
+    "facing=north,stage=2": {
+      "model": "forlorn:block/spinning_wheel_stage_2"
+    },
+    "facing=south,stage=2": {
+      "model": "forlorn:block/spinning_wheel_stage_2",
+      "y": 180
+    },
+    "facing=west,stage=2": {
+      "model": "forlorn:block/spinning_wheel_stage_2",
+      "y": 270
+    },
+    "facing=east,stage=3": {
+      "model": "forlorn:block/spinning_wheel_stage_3",
+      "y": 90
+    },
+    "facing=north,stage=3": {
+      "model": "forlorn:block/spinning_wheel_stage_3"
+    },
+    "facing=south,stage=3": {
+      "model": "forlorn:block/spinning_wheel_stage_3",
+      "y": 180
+    },
+    "facing=west,stage=3": {
+      "model": "forlorn:block/spinning_wheel_stage_3",
+      "y": 270
+    }
+  }
+}

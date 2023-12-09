@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "forlorn:shale"
+    }
+  },
+  "result": {
+    "item": "forlorn:potbelly_stove",
+    "count": 1
+  }
+}

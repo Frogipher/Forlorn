@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "SS"
+  ],
+  "key": {
+    "#": {
+      "item": "forlorn:polished_shale_slab"
+    },
+    "S": {
+      "tag": "forlorn:forlorn_planks"
+    }
+  },
+  "result": {
+    "item": "forlorn:architect_table",
+    "count": 1
+  }
+}

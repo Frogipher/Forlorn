@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "forlorn:block/architect_table",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "forlorn:block/architect_table"
+    },
+    "facing=south": {
+      "model": "forlorn:block/architect_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "forlorn:block/architect_table",
+      "y": 270
+    }
+  }
+}

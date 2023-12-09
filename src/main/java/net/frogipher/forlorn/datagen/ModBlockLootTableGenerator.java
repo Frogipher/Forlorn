@@ -25,6 +25,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VERIDIUM_BLOCK);
         addDrop(ModBlocks.RAW_VERIDIUM_BLOCK);
         addDrop(ModBlocks.SHALE);
+        addDrop(ModBlocks.OVERGROWN_SHALE, ModBlocks.SHALE);
         addDrop(ModBlocks.SHALE_BRICKS);
         addDrop(ModBlocks.CHISELED_SHALE_BRICKS);
         addDrop(ModBlocks.CRACKED_SHALE_BRICKS);
@@ -77,5 +78,10 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.MINT_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(MintCropBlock.AGE, 3));
         this.addDrop(ModBlocks.MINT_CROP, this.cropDrops(Blocks.WHEAT, ModItems.MINT_LEAVES, ModItems.MINT_SEEDS, builder2));
+
+        addDrop(ModBlocks.WORKBENCH);
+        addDrop(ModBlocks.POTBELLY_STOVE);
+        addDrop(ModBlocks.SPINNING_WHEEL);
+        addDrop(ModBlocks.ARCHITECT_TABLE);
     }
 }

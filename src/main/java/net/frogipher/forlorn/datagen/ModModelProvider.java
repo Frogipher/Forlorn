@@ -33,6 +33,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_BUBBLE_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_BUBBLE_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_BUBBLE_LAMP);
+        blockStateModelGenerator.registerCubeWithCustomTextures(ModBlocks.WORKBENCH, ModBlocks.POLISHED_SHALE, TextureMap::frontSideWithCustomBottom); //TODO once a more fabric oriented dev comes here, they can fix this. frontSideWithCustomBottom needs a front and a side texture but all sides should have the same, currently we have a duplicate with a different name.
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUBBLE_BLOCK);
         BlockStateModelGenerator.BlockTexturePool shale_bricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SHALE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool polished_shaleTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SHALE);
         BlockStateModelGenerator.BlockTexturePool shaleTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SHALE);
@@ -112,12 +114,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_GLOW_GUPPY, Models.GENERATED);
         itemModelGenerator.register(ModItems.TWIG, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMPTY_VESSEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUBBLE_VESSEL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SHALE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SHALE_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SHALE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SHALE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SHALE_SHOVEL, Models.HANDHELD);
+
+        itemModelGenerator.register(ModBlocks.FLUFFWOOD_SAPLING.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.VERDANT_SAPLING.asItem(), Models.GENERATED);
 
     }
 

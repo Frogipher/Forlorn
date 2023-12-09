@@ -16,7 +16,6 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.forlorn"))
                     .icon(() -> new ItemStack(ModItems.SUGAR_PLUM)).entries((displayContext, entries) -> {
 
-
                         entries.add(ModBlocks.UMBRITE_BLOCK);
                         entries.add(ModBlocks.RAW_UMBRITE_BLOCK);
                         entries.add(ModBlocks.UMBRITE_ORE);
@@ -34,6 +33,7 @@ public class ModItemGroup {
                         entries.add(ModItems.VERIDIUM_INGOT);
 
                         entries.add(ModBlocks.SHALE);
+                        entries.add(ModBlocks.OVERGROWN_SHALE);
                         entries.add(ModBlocks.SHALE_STAIRS);
                         entries.add(ModBlocks.SHALE_SLAB);
                         entries.add(ModBlocks.SHALE_WALL);
@@ -87,6 +87,7 @@ public class ModItemGroup {
                         entries.add(ModItems.SHALE_SHOVEL);
 
                         entries.add(ModItems.EMPTY_VESSEL);
+                        entries.add(ModItems.BUBBLE_VESSEL);
 
                         entries.add(ModBlocks.ECHO_FLOWER);
                         entries.add(ModItems.SUGAR_PLUM);
@@ -106,6 +107,11 @@ public class ModItemGroup {
                         entries.add(ModItems.TWIG);
 
                         entries.add(ModItems.FARTHER_MUSIC_DISC);
+
+                        entries.add(ModBlocks.WORKBENCH);
+                        entries.add(ModBlocks.POTBELLY_STOVE);
+                        entries.add(ModBlocks.SPINNING_WHEEL);
+                        entries.add(ModBlocks.ARCHITECT_TABLE);
 
                     }).build());
 

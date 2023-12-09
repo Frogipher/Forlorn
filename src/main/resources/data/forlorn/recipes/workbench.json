@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "tag": "forlorn:forlorn_planks"
+    }
+  },
+  "result": {
+    "item": "forlorn:workbench",
+    "count": 1
+  }
+}

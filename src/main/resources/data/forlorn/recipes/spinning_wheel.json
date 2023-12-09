@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forlorn:forlorn_planks"
+    },
+    "C": {
+      "item": "forlorn:fluff_tuft"
+    }
+  },
+  "result": {
+    "item": "forlorn:spinning_wheel",
+    "count": 1
+  }
+}

@@ -11,6 +11,7 @@
     "forlorn:raw_veridium_block",
     "forlorn:veridium_ore",
     "forlorn:shale",
+    "forlorn:overgrown_shale",
     "forlorn:polished_shale",
     "forlorn:shale_bricks",
     "forlorn:cracked_shale_bricks",
@@ -24,6 +25,8 @@
     "forlorn:bubble_bulb_block",
     "forlorn:pink_bubble_lamp",
     "forlorn:blue_bubble_lamp",
-    "forlorn:purple_bubble_lamp"
+    "forlorn:purple_bubble_lamp",
+    "forlorn:potbelly_stove",
+    "forlorn:architect_table"
   ]
 }
