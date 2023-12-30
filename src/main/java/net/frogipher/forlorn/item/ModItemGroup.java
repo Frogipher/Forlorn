@@ -96,14 +96,18 @@ public class ModItemGroup {
                         entries.add(ModItems.MINT_LEAVES);
                         entries.add(ModItems.BUBBLE_MINT);
                         entries.add(ModItems.RAW_GLOW_GUPPY);
+                        entries.add(ModItems.PLUMAGE);
 
                         entries.add(ModItems.STONE_HEART);
                         entries.add(ModItems.SUNSTONE);
                         entries.add(ModItems.MOONSTONE);
+                        entries.add(ModItems.SULFUR_CRYSTALS);
+                        entries.add(ModItems.MINERAL_CRYSTALS);
                         entries.add(ModItems.BUBBLE_JELLY);
                         entries.add(ModItems.PANICLE);
                         entries.add(ModItems.PANICLE_FLORETS);
                         entries.add(ModItems.PARCHMENT);
+                        entries.add(ModItems.TWIG_DISH);
                         entries.add(ModItems.TWIG);
 
                         entries.add(ModItems.FARTHER_MUSIC_DISC);

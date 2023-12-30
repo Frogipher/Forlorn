@@ -1,7 +1,7 @@
-// 1.20.1	2023-12-09T22:29:21.2323574	forlorn/Tags for minecraft:block
-ca135ab28413a51ab4f3979bf8b2ec446f0d63be data\minecraft\tags\blocks\mineable\pickaxe.json
-e8f6a4e1cd62ac2daced2e3d5a37afc362a1e10a data\minecraft\tags\blocks\needs_stone_tool.json
-358b3fb69f0ac8fe32ed6e04451f9810b9ed537e data\minecraft\tags\blocks\logs_that_burn.json
-41956fd355839d3fddbe3248d9d0cd2aeecb7d8f data\minecraft\tags\blocks\mineable\axe.json
-de38d1ed93fad6c4f0a36532373488a5f2c93610 data\minecraft\tags\blocks\walls.json
-55cf7fe64715b904c900a9d6c751e5f3231956da data\forlorn\tags\blocks\shale_growth.json
+// 1.20.1	2023-12-29T22:21:42.943143	forlorn/Tags for minecraft:block
+e8f6a4e1cd62ac2daced2e3d5a37afc362a1e10a data/minecraft/tags/blocks/needs_stone_tool.json
+ca135ab28413a51ab4f3979bf8b2ec446f0d63be data/minecraft/tags/blocks/mineable/pickaxe.json
+de38d1ed93fad6c4f0a36532373488a5f2c93610 data/minecraft/tags/blocks/walls.json
+41956fd355839d3fddbe3248d9d0cd2aeecb7d8f data/minecraft/tags/blocks/mineable/axe.json
+55cf7fe64715b904c900a9d6c751e5f3231956da data/forlorn/tags/blocks/shale_growth.json
+358b3fb69f0ac8fe32ed6e04451f9810b9ed537e data/minecraft/tags/blocks/logs_that_burn.json

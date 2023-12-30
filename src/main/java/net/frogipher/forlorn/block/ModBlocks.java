@@ -39,12 +39,12 @@ public class ModBlocks {
     public static final Block STRIPPED_VERDANT_LOG = registerBlock("stripped_verdant_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4f).mapColor(MapColor.LICHEN_GREEN)));
     public static final Block STRIPPED_VERDANT_WOOD = registerBlock("stripped_verdant_wood", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).mapColor(MapColor.LICHEN_GREEN)));
     public static final Block VERDANT_PLANKS = registerBlock("verdant_planks", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f).mapColor(MapColor.PALE_PURPLE)));
-    public static final Block VERDANT_LEAVES = registerBlock("verdant_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f).mapColor(MapColor.GREEN)));
+    public static final Block VERDANT_LEAVES = registerBlock("verdant_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f).mapColor(MapColor.GREEN).luminance(5)));
     public static final Block VERDANT_SAPLING = registerBlock("verdant_sapling", new SaplingBlock(new VerdantSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
 
     //Fluffwood
-    public static final Block FLUFFWOOD_BLOCK = registerBlock("fluffwood_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.BAMBOO_BLOCK).strength(4f).mapColor(MapColor.TERRACOTTA_BROWN)));
-    public static final Block STRIPPED_FLUFFWOOD_BLOCK = registerBlock("stripped_fluffwood_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BAMBOO_BLOCK).strength(4f).mapColor(MapColor.TERRACOTTA_WHITE)));
+    public static final Block FLUFFWOOD_BLOCK = registerBlock("fluffwood_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_LOG).strength(4f).mapColor(MapColor.TERRACOTTA_BROWN)));
+    public static final Block STRIPPED_FLUFFWOOD_BLOCK = registerBlock("stripped_fluffwood_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_LOG).strength(4f).mapColor(MapColor.TERRACOTTA_WHITE)));
     public static final Block FLUFFWOOD_PLANKS = registerBlock("fluffwood_planks", new Block(FabricBlockSettings.copyOf(Blocks.BIRCH_PLANKS).strength(4f).mapColor(MapColor.TERRACOTTA_WHITE)));
     public static final Block FLUFF = registerBlock("fluff", new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).strength(2f).mapColor(MapColor.OFF_WHITE)));
     public static final Block FLUFFWOOD_SAPLING = registerBlock("fluffwood_sapling", new SaplingBlock(new FluffwoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));

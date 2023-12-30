@@ -22,6 +22,10 @@ public class ModItems {
     public static final Item STONE_HEART = registerItem("stone_heart", new Item(new FabricItemSettings()));
     public static final Item SUNSTONE = registerItem("sunstone", new Item(new FabricItemSettings()));
     public static final Item MOONSTONE = registerItem("moonstone", new Item(new FabricItemSettings()));
+    public static final Item PLUMAGE = registerItem("plumage", new Item(new FabricItemSettings()));
+    public static final Item TWIG_DISH = registerItem("twig_dish", new Item(new FabricItemSettings()));
+    public static final Item SULFUR_CRYSTALS = registerItem("sulfur_crystals", new Item(new FabricItemSettings()));
+    public static final Item MINERAL_CRYSTALS = registerItem("mineral_crystals", new Item(new FabricItemSettings()));
     public static final Item SHALE_PEBBLE = registerItem("shale_pebble", new Item(new FabricItemSettings()));
     public static final Item BUBBLE_JELLY = registerItem("bubble_jelly", new Item(new FabricItemSettings()));
     public static final Item TWIG = registerItem("twig", new Item(new FabricItemSettings()));

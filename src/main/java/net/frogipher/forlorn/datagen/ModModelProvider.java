@@ -113,6 +113,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PARCHMENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_GLOW_GUPPY, Models.GENERATED);
         itemModelGenerator.register(ModItems.TWIG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TWIG_DISH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MINERAL_CRYSTALS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SULFUR_CRYSTALS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLUMAGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMPTY_VESSEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUBBLE_VESSEL, Models.GENERATED);
 

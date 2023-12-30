@@ -1,132 +1,118 @@
-done - 1 - The Workbench: A custom crafting table variant made from fluffwood or verdant planks.
-				The workbench uses wooden sounds.
-				Crafting recipe:
-				A = Modded Planks
+1 - Bug Fixes/ Additional Features to Existing Assets
 
-				AA
-				AA
+        Fixes:
+            -When walking on overgrown shale it should sound like moss.
+            -Architect Table says stonecutter when UI is opened and should say "Architect Table".
+            -Bubble Blocks break when touched by water.
 
-                The textures used are:
+        Additional Features:
+            -Bubble Bulb has lever sounds when turned on and off.
+            -Echo flowers can be placed on overgrown shale, shale, and fluffy shale(seen below).
+            -Both saplings should be able to be placed on overgrown shale and fluffy shale(seen below).
+            -Both saplings should be pottable.
+            -When you shift while standing on a bubble block it pops.
+            -You can right click a fully grown mint crop to harvest it.
 
-                all sides = workbench_side.png
-                top = workbench_top.png
-                bottom = polished_shale.png
+ 2 - Fluffy Shale: Works exactly like overgrown shale, bonemeal works the same, it reverts to shale when blocks are placed on it,
+     and the block makes wool sounds when you walk and stone sounds when you place and break it.
+
+     top texture : fluff.png
+     side textures: fluffy_shale.png
+     bottom texture: shale.png
+
+ 2 - Plants: All of the following plants can be placed on overgrown shale and fluffy shale.
+  Only breakable with shears:
+        -shale sprouts (can be placed on normal shale as well)
+        -tuft
+        -glowing shale sprouts (same luminance as glow lichen and can be placed on normal shale as well)
+        -shale grass (has a bottom and top texture)
+        -fluff vines
+                -fluff vines are only placeable on the bottom of fluff blocks, they do not grow unless bonemealed.
+                -fluff vines have multiple textures (fluff_vines.png, fluff_vines_bottom.png)
+                -fluff vines are like glow berry vines in the sense that they have a crosshair, they are not a flat plane like normal vines.
+                -they are climbale
+  Can be broken with your hand:
+        -glowcap cluster (have a luminance of 10)
+        -glowcap (have a luminance of 10, can be potted)
+        -crottle (glow lichen clone, same luminance as glow lichen)
+        -indigo cosmos (can be potted and have a luminance of 5)
+        Succulents:
+        Succulents generate like coral fans in their model, they can also be potted and when they are potted they use the flower model with two
+        2D crosshair.
+            -pink succulent
+            -blue succulent
+            -purple succulent
+
+  3 - Panicle
+        Panicle are a clone of sugar cane, however they can be placed no matter how much water is there.
+        Panicle can grow to be 3-4 blocks in height, and can be bonemealed.
+        Panicle that are fully grown (3-4 blocks) will grow florets that can be harvested by breaking them or right clicking
+         breaking them will cause another one to grow over time, right clicking will harvest the florets.
+
+         Textures:
+         panicle.png (already implemented, this is the item texture)
+         panicle_florets.png (already implemented, this is the item texture for the flowers)
+         panicle_stalks.png (block texture)
+         panicle_flowers.png (flower texture)
+         panicle_flowers_harvested.png (harvested flowers texture)
+
+  4 - Sugar Plum Crop
+         Sugar plums are already implemented.
+
+         Changes to the sugar plum:
+            -Sugar plums now have a 50% chance to drop a sugar plum pit (sugar_plum_pit.png) when eaten.
+            -Sugar plum pits can be thrown and will do 2-3 hp if they hit something.
+
+            Sugar plum plants can be grown 1 of 2 ways.
+
+            1st is natural generation, in the world, sugar plums will generate from the cyclade tree leaves, there
+            are sprouts that come from the trees.
+
+            cyclade sprout.png are the cyclade sprouts, they can only be placed on the underside of cyclade leaves (in code as verdant leaves).
+            cyclade sprouts do not drop when they are broken even if they are broken with shears.
+
+            crop stages:
+            stage 1: cyclade_sprout.png and plum_tree_sprout_png.
+            stage 2: cyclade_sprout.png and plum_tree_flower.png
+            stage 3: cyclade_sprout.png and unripe_plum.json/ unripe_plum.png
+            stage 4: cyclade_sprout.png and ripe_plum.json/ ripe_plum.png
+
+            2nd is by planting the sugar plum pit.
+
+            stage 1: plum_crop_0.png
+            stage 2: plum_crop_1_bottom.png and plum_crop_1_top.png
+            stage 3: plum_crop_2_bottom.png and plum_crop_2_top.png and unripe_plum.json/unripe_plum.png
+            stage 4: plum_crop_3_bottom.png and plum_crop_3_top.png and ripe_plum.json/ripe_plum.png
+
+            You will not get anything if you break the crops unless they are fully grown, alternativley, you can right-click to harvest the plum.
+
+            referecne the photo I sent in discord dms to see what the crop stages look like on the tree and on the ground.
+
+  5 - Sulfur
+        Sulfur Crystals are already implemented in game.
+
+        +Sulfur crystals can be used as fuel and have the same fuel as coal.
+
+        +Add sulfur block, if broken with a pickaxe it will drop 2-4 sulfur crystals. (sulfur_block.png)
+
+        Crafting recipe:
+
+        A = sulfur crystals
+
+        AA
+        AA
+
+        Alternatively, you can craft a sulfur block into 4 sulfur crystals.
+
+        A = sulfur block.
+
+        A
+
+        +Sulfur cluster (sulfur_cluster.png)
+
+        If broken with your fist or a pickaxe, clusters will drop 1-2 sulfur crystals.
+        If broken with shears they will drop the sulfur cluster.
 
 
 
-done - 2 - The Potbelly Stove: A custom furnace variant made from shale.
-				The potbelly stove uses stone sounds.
-				Crafting recipe:
-				B = Shale
 
-				BBB
-				B B
-				BBB
-                The textures used are:
-
-                front = potbelly_stove_front.png
-                lit = potbelly_stove_front_lit.png
-                side = potbelly_stove_side.png
-                back = potbelly_stove_side.png
-                top = workstation_top.png
-                bottom = polished_shale.png
-
-                flame particle from the furnace = sulfur_flame.png
-
-done - 3 - The Spinning Wheel: Imagine a special table, kind of like a workstation, but with no UI.
-                Instead, it looks like a wheel. When you right-click on it with a fluffy tuft
-                (which is already implemented), the appearance of the wheel changes.
-                After you've placed three tufts on the wheel, it goes back to its original look and produces a
-                fluffy thread as a result.
-				 
-			addition by laz:
-				empty wheel + tuft -> wheel stage 1
-				wheel stage 1 + tuft -> wheel stage 2
-				wheel stage 2 + tuft -> wheel stage 3
-				wheel stage 3 + right click -> empty wheel + gives thread
-				wheel stage 1-3 + shift right click -> gives back the tuft on the wheel
-
-				The spinning wheel uses wood sounds.
-
-				When tuft is placed on the wheel it makes a wool placing sound.
-
-				When thread is made from the wheel it makes a wool breaking sound.
-
-				Crafting recipe:
-				B = Modded Planks
-				C = Fluff Tuft
-
-				BBB
-				BCB
-				BBB
-
-				Assets used are:
-
-				Spinning Wheel:
-						spinning_wheel_stage_0.png
-						spinning_wheel_stage_1.png
-						spinning_wheel_stage_2.png
-						spinning_wheel_stage_3.png
-
-						model = spinning_wheel.json
-
-
-
-				Input = Fluff tuft item (already implemented)
-				Output = Fluff thread item (already implemented)
-
-done - 4 - The Architect Table: A custom stonecutter variant.
-				The architect table uses stone sounds.
-				Crafting recipe:
-				C = Modded Planks
-				D = Polished Shale Slab
-
-				DD
-				CC
-
-				The textures used are:
-
-				front and back = architect_table_front.png
-				sides = architect_table_side.png
-				top = workstation_top.png
-				bottom = polished_shale.png
-
-
-done - 5 - An overgrown shale block that works similar to grass
-				(when other blocks are placed on grass blocks they revert to the dirt)
-				The overgrown shale would revert to a shale block which is already fully implemented.
-
-				The textures used are:
-
-				overgrown_shale.png
-				overgrown_shale_top.png
-
-				shale.png
-				
-
-6 - Bubble block, a transparent block that you can bounce on.
-
-				Textures used are:
-
-				bubble_block.png
-
-				These will break if broken with your hand or any tool and will not show particles.
-
-				You can only pick these up in an empty vessel (already implemented) and get a bubble vessel.
-
-				item texture = bubble_vessel.png
-
-				The break and place sounds for this are the same as the Minecraft item drop sound.
-				
-			addition by laz:
-				blockpicking (mouse wheel click) gives a bubble vessel
-				block also wanishes if a projectile hits it
-		
-7 - Laz's additional stuff
-				fixed lang for raw brass block, brass block, brass ore
-				fixed lang for raw veridium block, veridium block, veridium ore
-				fixed item model for fluffwood and verdant saplings
-				[datagen wasnt run on these before i got the project:]
-				fixed model for shale stair, slab, wall, brick wall
-				fixed model for verdant stair, slab, pressure plate, button
-				fixed model for fluffwood stair, slab, pressure plate, button
