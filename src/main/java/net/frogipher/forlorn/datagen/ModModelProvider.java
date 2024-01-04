@@ -74,10 +74,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_VERDANT_LOG).log(ModBlocks.STRIPPED_VERDANT_LOG).wood(ModBlocks.STRIPPED_VERDANT_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANT_LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.VERDANT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        //blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.VERDANT_SAPLING, ModBlocks.POTTED_VERDANT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerLog(ModBlocks.FLUFFWOOD_BLOCK).log(ModBlocks.FLUFFWOOD_BLOCK).wood(ModBlocks.STRIPPED_FLUFFWOOD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FLUFF);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.FLUFFWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        //blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.FLUFFWOOD_SAPLING, ModBlocks.POTTED_FLUFFWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {

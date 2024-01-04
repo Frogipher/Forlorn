@@ -22,11 +22,12 @@ public class BubbleVesselItem extends Item {
         BlockState placeState = context.getWorld().getBlockState(placePos);
         if(placeState.isReplaceable() || placeState.isAir()){
             context.getWorld().setBlockState(placePos, ModBlocks.BUBBLE_BLOCK.getDefaultState());
+            context.getWorld().updateNeighbor(placePos, ModBlocks.BUBBLE_BLOCK,placePos);
             if(!context.getPlayer().isCreative()) {
                 context.getStack().decrement(1);
                 context.getPlayer().getInventory().insertStack(new ItemStack(ModItems.EMPTY_VESSEL, 1));
             }
-            context.getWorld().playSoundAtBlockCenter(placePos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS,1F, 1F, true);
+            context.getWorld().playSoundAtBlockCenter(placePos, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundCategory.BLOCKS,10F, 1F, true);
             return ActionResult.SUCCESS;
         }else{
             return ActionResult.FAIL;

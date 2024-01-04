@@ -44,11 +44,13 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FLUFFWOOD_PLANKS);
         addDrop(ModBlocks.FLUFF);
         addDrop(ModBlocks.FLUFFWOOD_SAPLING);
+        addDrop(ModBlocks.POTTED_FLUFFWOOD_SAPLING);
         addDrop(ModBlocks.VERDANT_LOG);
         addDrop(ModBlocks.VERDANT_LEAVES);
         addDrop(ModBlocks.VERDANT_PLANKS);
         addDrop(ModBlocks.VERDANT_WOOD);
         addDrop(ModBlocks.VERDANT_SAPLING);
+        addDrop(ModBlocks.POTTED_VERDANT_SAPLING);
         addDrop(ModBlocks.STRIPPED_VERDANT_WOOD);
         addDrop(ModBlocks.STRIPPED_VERDANT_LOG);
         addDrop(ModBlocks.VERDANT_SAPLING);

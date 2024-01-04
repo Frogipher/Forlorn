@@ -3,6 +3,8 @@ package net.frogipher.forlorn.block.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.ActionResult;
@@ -26,6 +28,8 @@ public class BubbleBulbBlock extends Block {
 
         if (!world.isClient() && hand == Hand.MAIN_HAND){
             world.setBlockState(pos, state.cycle(CLICKED));
+        }else if(world.isClient() &&hand == Hand.MAIN_HAND){
+            world.playSoundAtBlockCenter(pos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS,1F, 1F, true);
         }
 
         return ActionResult.SUCCESS;

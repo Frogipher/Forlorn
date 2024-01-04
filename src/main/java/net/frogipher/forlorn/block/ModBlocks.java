@@ -13,10 +13,13 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+
+import java.util.List;
 
 public class ModBlocks {
 
@@ -40,14 +43,12 @@ public class ModBlocks {
     public static final Block STRIPPED_VERDANT_WOOD = registerBlock("stripped_verdant_wood", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f).mapColor(MapColor.LICHEN_GREEN)));
     public static final Block VERDANT_PLANKS = registerBlock("verdant_planks", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f).mapColor(MapColor.PALE_PURPLE)));
     public static final Block VERDANT_LEAVES = registerBlock("verdant_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f).mapColor(MapColor.GREEN).luminance(5)));
-    public static final Block VERDANT_SAPLING = registerBlock("verdant_sapling", new SaplingBlock(new VerdantSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
 
     //Fluffwood
     public static final Block FLUFFWOOD_BLOCK = registerBlock("fluffwood_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_LOG).strength(4f).mapColor(MapColor.TERRACOTTA_BROWN)));
     public static final Block STRIPPED_FLUFFWOOD_BLOCK = registerBlock("stripped_fluffwood_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_LOG).strength(4f).mapColor(MapColor.TERRACOTTA_WHITE)));
     public static final Block FLUFFWOOD_PLANKS = registerBlock("fluffwood_planks", new Block(FabricBlockSettings.copyOf(Blocks.BIRCH_PLANKS).strength(4f).mapColor(MapColor.TERRACOTTA_WHITE)));
     public static final Block FLUFF = registerBlock("fluff", new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).strength(2f).mapColor(MapColor.OFF_WHITE)));
-    public static final Block FLUFFWOOD_SAPLING = registerBlock("fluffwood_sapling", new SaplingBlock(new FluffwoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
 
     //Light Blocks
     public static final Block PINK_BUBBLE_LAMP = registerBlock("pink_bubble_lamp", new Block(FabricBlockSettings.copyOf(Blocks.SEA_LANTERN).mapColor(MapColor.PINK).luminance(15)));
@@ -57,7 +58,8 @@ public class ModBlocks {
 
     //Shale
     public static final Block SHALE = registerBlock("shale", new ShaleBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
-    public static final Block OVERGROWN_SHALE = registerBlock("overgrown_shale", new OvergrownShaleBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY).ticksRandomly()));
+    public static final BlockSoundGroup OVERGROWN_SHALE_SOUND_GROUP = new BlockSoundGroup(1.0F, 1.0F, SoundEvents.BLOCK_STONE_BREAK, SoundEvents.BLOCK_MOSS_STEP, SoundEvents.BLOCK_STONE_PLACE, SoundEvents.BLOCK_MOSS_HIT, SoundEvents.BLOCK_MOSS_FALL);
+    public static final Block OVERGROWN_SHALE = registerBlock("overgrown_shale", new OvergrownShaleBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY).sounds(OVERGROWN_SHALE_SOUND_GROUP).ticksRandomly()));
     public static final Block SHALE_BRICKS = registerBlock("shale_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block CRACKED_SHALE_BRICKS = registerBlock("cracked_shale_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block CHISELED_SHALE_BRICKS = registerBlock("chiseled_shale_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
@@ -96,7 +98,7 @@ public class ModBlocks {
     public static final Block MINT_CROP = registerBlockWithoutBlockItem("mint_crop", new MintCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     //Flowers
-    public static final Block ECHO_FLOWER = registerBlock("echo_flower", new FlowerBlock(StatusEffects.DARKNESS, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM).luminance(5)));
+    public static final Block ECHO_FLOWER = registerBlock("echo_flower", new ModFlowerBlock(List.of(ModBlocks.SHALE, ModBlocks.OVERGROWN_SHALE, Blocks.FARMLAND, BlockTags.DIRT), StatusEffects.DARKNESS, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM).luminance(5)));
     public static final Block POTTED_ECHO_FLOWER = registerBlockWithoutBlockItem("potted_echo_flower", new FlowerPotBlock(ECHO_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).luminance(5)));
 
     //Functional Blocks
@@ -104,9 +106,14 @@ public class ModBlocks {
     public static final Block POTBELLY_STOVE = registerBlock("potbelly_stove", new PotbellyStoveBlock(FabricBlockSettings.copyOf(Blocks.FURNACE).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block SPINNING_WHEEL = registerBlock("spinning_wheel", new SpinningWheelBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_PLANKS)));
     public static final Block ARCHITECT_TABLE = registerBlock("architect_table", new ArchitectTableBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER).mapColor(MapColor.DEEPSLATE_GRAY)));
-    public static final BlockSoundGroup BUBBLE = new BlockSoundGroup(0.3F, 1.0F, SoundEvents.ENTITY_ITEM_PICKUP, SoundEvents.BLOCK_MOSS_STEP, SoundEvents.ENTITY_ITEM_PICKUP, SoundEvents.BLOCK_MOSS_HIT, SoundEvents.ENTITY_ITEM_PICKUP);
+    public static final BlockSoundGroup BUBBLE = new BlockSoundGroup(0.3F, 1.0F, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundEvents.BLOCK_MOSS_STEP, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP);
     public static final Block BUBBLE_BLOCK = registerBlockWithoutBlockItem("bubble_block", new BubbleBlock(FabricBlockSettings.copyOf(Blocks.GLASS).nonOpaque().sounds(BUBBLE)));
 
+    //these had to be moved down here since "registry order". stuff that are specified for the soil blocks were specified too late, so it crashed with a nullpointer exception. since they were moved down here, potted saplings couldn't be registered earlier, so they moved here too.
+    public static final Block FLUFFWOOD_SAPLING = registerBlock("fluffwood_sapling", new ModSaplingBlock(List.of(ModBlocks.OVERGROWN_SHALE, Blocks.FARMLAND, BlockTags.DIRT), new FluffwoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
+    public static final Block VERDANT_SAPLING = registerBlock("verdant_sapling", new ModSaplingBlock(List.of(ModBlocks.OVERGROWN_SHALE, Blocks.FARMLAND, BlockTags.DIRT), new VerdantSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
+    public static final Block POTTED_FLUFFWOOD_SAPLING = registerBlockWithoutBlockItem("potted_fluffwood_sapling", new FlowerPotBlock(FLUFFWOOD_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).luminance(5)));
+    public static final Block POTTED_VERDANT_SAPLING = registerBlockWithoutBlockItem("potted_verdant_sapling", new FlowerPotBlock(VERDANT_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).luminance(5)));
 
 
     //Registries

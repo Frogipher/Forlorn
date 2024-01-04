@@ -1,16 +1,15 @@
 package net.frogipher.forlorn.block.custom;
 
 import net.frogipher.forlorn.item.ModItems;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.TransparentBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -20,6 +19,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+
+import java.util.Iterator;
 
 public class BubbleBlock extends TransparentBlock {
 
@@ -34,16 +35,18 @@ public class BubbleBlock extends TransparentBlock {
 
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return super.getPickStack(world, pos, state);
+        return new ItemStack(ModItems.BUBBLE_VESSEL);
     }
 
     @Override
     public void onProjectileHit(World world, BlockState state, BlockHitResult hit, ProjectileEntity projectile) {
         selfDestruct(world, hit.getBlockPos());
+        world.playSoundAtBlockCenter(hit.getBlockPos(), SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundCategory.BLOCKS,10F, 1F, true);
     }
 
     public void selfDestruct(World world, BlockPos selfPos){
         world.setBlockState(selfPos, Blocks.AIR.getDefaultState());
+        world.playSoundAtBlockCenter(selfPos, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundCategory.BLOCKS,10F, 1F, true);
     }
 
     @Override
@@ -52,7 +55,7 @@ public class BubbleBlock extends TransparentBlock {
         ItemStack bubbleVessel = new ItemStack(ModItems.BUBBLE_VESSEL);
         if(interactStack.getItem() == ModItems.EMPTY_VESSEL){
             if(world.isClient){
-                world.playSoundAtBlockCenter(pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS,1F, 1F, true);
+                world.playSoundAtBlockCenter(pos, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundCategory.BLOCKS,10F, 1F, true);
                 return ActionResult.SUCCESS;
             }else{
                 if(!player.isCreative()){
@@ -101,7 +104,48 @@ public class BubbleBlock extends TransparentBlock {
     public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
         return 1.0F;
     }
+
     public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {
         return true;
+    }
+
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        this.update(world, pos);
+        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
+    }
+
+    protected void update(World world, BlockPos pos) {
+        if (this.isWaterAround(world, pos)) {
+            this.selfDestruct(world, pos);
+            world.playSoundAtBlockCenter(pos, SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP, SoundCategory.BLOCKS,10F, 1F, true);
+        }
+    }
+
+    public boolean isWaterAround(World world, BlockPos pos){
+        Iterator var5 = BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1)).iterator();
+
+        BlockPos blockPos;
+        FluidState fluidState;
+        do {
+            if (!var5.hasNext()) {
+                return false;
+            }
+
+            blockPos = (BlockPos)var5.next();
+            fluidState = world.getFluidState(blockPos);
+        } while(!fluidState.isIn(FluidTags.WATER));
+
+        return true;
+    }
+
+    @Override
+    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
+        if(entity instanceof PlayerEntity){
+            if(((PlayerEntity) entity).isSneaking()){
+                selfDestruct(world, pos);
+                Vec3d vec3d = entity.getVelocity();
+                entity.setVelocity(vec3d.x, vec3d.y+0.5, vec3d.z);
+            }
+        }
     }
 }

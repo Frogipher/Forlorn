@@ -1,20 +1,25 @@
 1 - Bug Fixes/ Additional Features to Existing Assets
 
         Fixes:
-            -When walking on overgrown shale it should sound like moss.
-            -Architect Table says stonecutter when UI is opened and should say "Architect Table".
-            -Bubble Blocks break when touched by water.
+            ✓ - When walking on overgrown shale it should sound like moss.
+            ✓ - Architect Table says stonecutter when UI is opened and should say "Architect Table".
+            ✓ - Bubble Blocks break when touched by water.
+			Additional - block pick with middle mouse button on the bubble block resulted in nothing, now it gives the bubble vessel
 
         Additional Features:
-            -Bubble Bulb has lever sounds when turned on and off.
-            -Echo flowers can be placed on overgrown shale, shale, and fluffy shale(seen below).
-            -Both saplings should be able to be placed on overgrown shale and fluffy shale(seen below).
-            -Both saplings should be pottable.
-            -When you shift while standing on a bubble block it pops.
-            -You can right click a fully grown mint crop to harvest it.
+            ✓ - Bubble Bulb has lever sounds when turned on and off.
+            ✓ - Echo flowers can also be placed on overgrown shale, shale.
+            ✓ - Both saplings should also be able to be placed on overgrown shale.
+            ✓ - Both saplings should be pottable.
+            ✓ - When you shift while standing on a bubble block it pops.
+			✓ - Change the bubble block sounds to minecraft bubble3.
+			- Add bubble pop particle for the bubble block
+            - You can right click a fully grown mint crop to harvest it.
 
  2 - Fluffy Shale: Works exactly like overgrown shale, bonemeal works the same, it reverts to shale when blocks are placed on it,
      and the block makes wool sounds when you walk and stone sounds when you place and break it.
+			- Echo Flower can be placed on fluffy shale(seen below).
+			- Both modded saplings can be placed on fluffy shale.
 
      top texture : fluff.png
      side textures: fluffy_shale.png

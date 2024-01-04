@@ -7,6 +7,7 @@ import net.frogipher.forlorn.item.ModItems;
 import net.minecraft.block.ComposterBlock;
 
 public class ModRegistries {
+
     public static void registerModStuffs(){
         registerModCompostables();
         registerStrippables();
